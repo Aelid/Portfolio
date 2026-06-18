@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site Vitrine</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+</head>
+
+<body>
+
+  <div class="glow-shape shape-1"></div>
+<div class="glow-shape shape-2"></div>
+
+<div class="ring ring-1"></div>
+<div class="ring ring-2"></div>
+<div class="ring ring-3"></div>
+
+<!-- HEADER -->
+  <header class="header">
+  <div class="logo">Luigi.dev</div>
+
+ <nav class="nav">
+  <a href="index.html" data-key="navHome">Accueil</a>
+  <a href="projects.html" data-key="navProjects">Projets</a>
+  <a href="about.html" data-key="navAbout">À propos</a>
+
+  <div class="language-switch">
+  <button id="fr-btn">FR</button>
+  <span>|</span>
+  <button id="en-btn">EN</button>
+</div>
+
+</nav>
+</header>
+<main>
+
+  <section class="cv-page">
+  <h1 data-html-key="aboutHeading">À propos de moi <span>| Profil développeur</span></h1>
+
+  <div class="cv-card cv-grid">
+
+    <aside class="cv-sidebar">
+      <div class="profile-photo">
+  <img src="images/photo-luigi.jfif" alt="Photo de Luigi Behal">
+</div>
+
+      <h2>Luigi Behal</h2>
+      <p data-key="developerJob">Développeur Fullstack Junior</p>
+
+      <div class="cv-block">
+        <h3 data-key="profileTitle">Profil</h3>
+        <p data-key="profileDescription">Développeur web junior ayant réalisé plusieurs projets complets en HTML, CSS, JavaScript, React et Node.js. Je recherche aujourd'hui une opportunité me permettant de continuer à progresser tout en contribuant à des projets concrets.</p>
+      </div>
+
+  
+    </aside>
+
+    <div class="cv-content">
+      <div class="cv-section">
+        <h3 data-key="experienceProjects">Expérience / Projets</h3>
+
+        <div class="cv-item">
+          <h4 data-key="portfolioDeveloper">Portfolio développeur</h4>
+          <p data-key="portfolioDeveloperDescription">Conception d’un portfolio responsive en HTML, CSS et JavaScript pour présenter mon profil, mes compétences et mes projets.</p>
+        </div>
+
+        <div class="cv-item">
+          <h4 data-key="piiquanteProject">Projet Piiquante</h4>
+          <p data-key="piiquanteProjectDescription">Développement d’une API backend avec Node.js, Express et MongoDB, incluant authentification, sécurité et gestion d’images.</p>
+        </div>
+
+        <div class="cv-item">
+          <h4 data-key="trainingProjects">Projets de formation</h4>
+          <p data-key="trainingProjectsDescription">Réalisation de plusieurs projets web durant ma formation, avec intégration responsive, JavaScript, React et APIs REST.</p>
+        </div>
+      </div>
+
+      <div class="cv-section">
+        <h3 data-key="skillsTitle">Compétences</h3>
+
+        <div class="skills-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Node.js</span>
+          <span>Express</span>
+          <span>MongoDB</span>
+          <span>Git</span>
+          <span>API REST</span>
+        </div>
+      </div>
+    </div>
+
+    <aside class="cv-studies">
+      <div class="cv-section">
+        <h3 data-key="studiesTitle">Études</h3>
+
+       <div class="cv-item">
+  <h4 data-key="webDeveloperStudy">2021 - 2022 | Développeur Web</h4>
+  <h4>OpenClassrooms</h4>
+  <p data-key="rncpTitle">Titre RNCP Niveau 5 (Bac +2)</p>
+</div>
+        <div class="cv-item">
+          <h4 data-key="practicalProjects">Projets pratiques</h4>
+          <p data-key="practicalProjectsDescription">Développement de sites web, API REST, intégration responsive et bases de données, HTML / CSS JavaScript React Node.js MongoDB</p>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+  </section>
+
+<section class="contact-page">
+  <h2 data-html-key="contactHeading">Contact <span>| Travaillons ensemble</span></h2>
+
+  <div class="contact-card">
+  <form class="contact-form" id="contact-form">
+
+    <label data-key="nameLabel">Nom</label>
+    <input
+      type="text"
+      name="name"
+      placeholder="Votre nom"
+      data-placeholder-key="namePlaceholder"
+      required
+    />
+
+    <label data-key="emailLabel">Email</label>
+    <input
+      type="email"
+      name="email"
+      placeholder="votre@email.com"
+      data-placeholder-key="emailPlaceholder"
+      required
+    />
+
+    <label data-key="messageLabel">Message</label>
+    <textarea
+      name="message"
+      placeholder="Votre message"
+      data-placeholder-key="messagePlaceholder"
+      rows="6"
+      required
+    ></textarea>
+
+    <button class="btn" type="submit" data-key="sendMessage">
+      Envoyer le message
+    </button>
+
+  </form>
+
+  <div class="contact-details">
+
+  <div class="contact-detail">
+  <span class="contact-icon">
+    <img src="images/icons/send.png" alt="Email">
+  </span>
+
+  <div>
+    <h3>Email</h3>
+    <p>
+  <a class="mail-link" href="#" id="copyEmail">
+    Behalluigi@gmail.com
+  </a>
+</p>
+
+<span id="copyToast" data-key="emailCopied">✓ Email copié</span>
+  </div>
+</div>
+
+  <div class="contact-detail">
+    <span class="contact-icon">
+      <img src="images/icons/location.png" alt="Localisation">
+    </span>
+
+    <div>
+      <h3 data-key="locationTitle">Localisation</h3>
+      <p>France, Meaux</p>
+    </div>
+  </div>
+
+  <div class="contact-detail">
+    <span class="contact-icon">
+      <img src="images/icons/chat.png" alt="Disponibilité">
+    </span>
+
+    <div>
+      <h3 data-key="availabilityTitle">Disponibilité</h3>
+      <p data-key="availabilityText">Disponible pour projets web</p>
+    </div>
+  </div>
+
+  <div class="contact-socials">
+    <a href="https://github.com/Aelid" target="_blank">
+      <img src="images/icons/github.png" alt="GitHub">
+    </a>
+
+    <a href="https://www.linkedin.com/in/luigi-behal/" target="_blank">
+      <img src="images/icons/linkedin.png" alt="LinkedIn">
+    </a>
+  </div>
+
+</div>
+
+</div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="footer-inner">
+    <p>© 2026 Luigi Behal</p>
+
+    <div class="footer-links">
+      <a href="index.html" data-key="footerHome">Accueil</a>
+      <a href="projects.html" data-key="footerProjects">Projets</a>
+      <a href="about.html" data-key="footerAbout">À propos</a>
+      <a href="https://github.com/Aelid" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/luigi-behal/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="translations.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site Vitrine</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+</head>
+
+<body>
+
+<div class="glow-shape shape-1"></div>
+<div class="glow-shape shape-2"></div>
+<div class="ring ring-1"></div>
+<div class="ring ring-2"></div>
+<div class="ring ring-3"></div>
+
+  <!-- HEADER -->
+  <header class="header">
+  <div class="logo">Luigi.dev</div>
+
+ <nav class="nav">
+  <a href="index.html" data-key="navHome">Accueil</a>
+  <a href="projects.html" data-key="navProjects">Projets</a>
+  <a href="about.html" data-key="navAbout">À propos</a>
+
+   <div class="language-switch">
+  <button id="fr-btn">FR</button>
+  <span>|</span>
+  <button id="en-btn">EN</button>
+</div>
+</nav>
+</header>
+
+  <!-- HERO -->
+ <section id="home" class="hero">
+
+  <div class="hero-content">
+
+    <span class="hero-badge" data-key="heroBadge">🚀 Disponible pour projets</span>
+
+    <h2 data-key="heroTitle">Crée des projets web modernes</h2>
+
+      <h2 data-key="heroJob">Développeur web junior</h2>
+
+<p data-key="heroDescription">Je conçois des interfaces web modernes, responsives et performantes avec HTML, CSS, JavaScript, React et Node.js.</p>
+    </p>
+
+    <div class="hero-actions">
+      <a href="about.html#contact" class="btn" data-key="contactBtn">Me contacter</a>
+      <a href="#projects" class="secondary-link" data-key="viewProjects">Voir les projets</a>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="featured-projects" class="projects-slider-section">
+  <h3 data-key="recentProjects">Projets récents</h3>
+
+  <div class="project-slider">
+    <button class="slider-btn prev" type="button">‹</button>
+
+    <div class="project-slide">
+      <div class="project-image">
+        <img id="projectImage" src="images/projects/portfolio.png" alt="Portfolio développeur">
+      </div>
+
+      <div class="project-info">
+        <span id="projectTech" class="project-tech">HTML • CSS • JavaScript</span>
+        <h4 id="projectTitle">Portfolio développeur</h4>
+        <p id="projectDescription">
+          Portfolio responsive avec page d’accueil, page à propos, animations et design moderne.
+        </p>
+      </div>
+    </div>
+
+    <button class="slider-btn next" type="button">›</button>
+  </div>
+
+  <a href="projects.html" class="btn" data-key="viewAllProjects">Voir tous les projets</a>
+</section>
+
+
+</section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+  <div class="footer-inner">
+    <p>© 2026 Luigi Behal</p>
+
+    <div class="footer-links">
+      <a href="index.html" data-key="footerHome">Accueil</a>
+      <a href="projects.html" data-key="footerProjects">Projets</a>
+      <a href="about.html" data-key="footerAbout">À propos</a>
+      <a href="https://github.com/Aelid" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/luigi-behal/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+<script src="translations.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

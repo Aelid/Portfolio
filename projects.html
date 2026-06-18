@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site Vitrine</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+</head>
+
+<body>
+
+<div class="glow-shape shape-1"></div>
+<div class="glow-shape shape-2"></div>
+<div class="ring ring-1"></div>
+<div class="ring ring-2"></div>
+<div class="ring ring-3"></div>
+
+  <header class="header">
+    <div class="logo">MonSite</div>
+
+      <nav class="nav">
+  <a href="index.html" data-key="navHome">Accueil</a>
+  <a href="projects.html" data-key="navProjects">Projets</a>
+  <a href="about.html" data-key="navAbout">À propos</a>
+
+       <div class="language-switch">
+  <button id="fr-btn">FR</button>
+  <span>|</span>
+  <button id="en-btn">EN</button>
+</div>
+    </nav>
+  </header>
+
+  <main>
+  <main>
+  <section class="projects-page">
+    <h1 data-html-key="projectsHeading">Mes <span>Projets</span></h1>
+    <p class="projects-intro" data-key="projectsIntro">Découvrez une sélection de mes projets réalisés.</p>
+
+    <article class="project-card-tabs">
+      <aside class="project-side">
+        <h2><span class="project-dot"></span>Piiquante</h2>
+        <p data-key="piiquanteDescription">Application de notation de sauces piquantes avec classement, authentification et espace personnel.</p>
+
+        <div class="project-tags">
+          <span>Node.js</span>
+          <span>Express</span>
+          <span>MongoDB</span>
+          <span>JWT</span>
+          <span>EJS</span>
+        </div>
+      </aside>
+
+      <div class="project-main">
+        <div class="project-tabs">
+          <button class="tab-btn active" data-project="piquante" data-tab="preview" data-key="previewTab">Aperçu</button>
+          <button class="tab-btn" data-project="piquante" data-tab="tech" data-key="technicalTab">Technique</button>
+          <button class="tab-btn" data-project="piquante" data-tab="github" data-key="githubTab">GitHub</button>
+        </div>
+
+        <div class="project-tab-content active" id="piquante-preview">
+          <img src="images/projects/hotsauce.PNG" alt="Aperçu Piiquante">
+
+          <div class="project-text">
+            <p data-key="piiquantePreviewDescription">Application permettant aux utilisateurs d’ajouter, noter et commenter leurs sauces piquantes préférées.</p>
+            <a href="https://piiquanteluigi.netlify.app/login" class="btn" target="_blank" data-key="viewProject">Voir le projet ↗</a>
+          </div>
+        </div>
+
+        <div class="project-tab-content tech-content" id="piquante-tech">
+  <div class="tech-grid">
+    <div class="tech-card">
+      <h4 data-key="frontendTitle">Frontend</h4>
+      <p>HTML5, CSS3, JavaScript ES6, Angular</p>
+    </div>
+
+    <div class="tech-card">
+      <h4 data-key="backendTitle">Backend</h4>
+      <p>Node.js, Express.js, API REST, Mongoose, MongoDB Atlas</p>
+    </div>
+
+    <div class="tech-card">
+      <h4 data-key="featuresTitle">Fonctionnalités</h4>
+      <ul>
+        <li data-key="secureAuth">Authentification sécurisée</li>
+        <li data-key="createDelete">Création et suppression</li>
+        <li data-key="fullCrud">CRUD complet des publications</li>
+        <li data-key="imageUpload">Upload et gestion d'images</li>
+        <li data-key="mongodbPersistence">Persistance des données avec MongoDB Atlas</li>
+        <li data-key="routeProtection">Protection des routes via middleware</li>
+      </ul>
+    </div>
+
+    <div class="tech-card">
+      <h4 data-key="projectSkillsTitle">Compétences</h4>
+      <ul>
+        <li data-key="jwtAuthSkill">Authentification par token (JWT)</li>
+        <li data-key="bcryptSkill">Gestion sécurisée des mots de passe (bcrypt)</li>
+        <li data-key="frontBackArchitecture">Architecture Front / Back</li>
+        <li data-key="apiRestDesign">Conception d'une API REST</li>
+        <li data-key="customExpressMiddleware">Middleware Express personnalisés</li>
+        <li data-key="mongodbMongooseIntegration">Intégration MongoDB/Mongoose</li>
+        <li data-key="fileUploadManagement">Gestion des fichiers et uploads</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+        <div class="project-tab-content tech-content" id="piquante-github">
+  <div class="github-card">
+
+    <h3 data-key="githubRepository">GitHub Repository</h3>
+
+    <p data-key="githubDescription">Retrouvez le code source complet du projet ainsi que sa structure et sa documentation.</p>
+
+    <div class="github-features">
+      <span>🔐 JWT Auth</span>
+      <span>🛡️ bcrypt</span>
+      <span>📤 Multer Upload</span>
+      <span>🗄️ MongoDB Atlas</span>
+      <span>⚡ Express API</span>
+      <span>📖 README</span>
+    </div>
+
+    <a href="https://github.com/Aelid/piiquante" class="btn" target="_blank" data-key="viewGithub">Voir GitHub ↗</a>
+
+  </div>
+</div>
+</div>
+</article>
+
+<div class="dessins-try" id="dessins">
+
+
+  
+</div>
+
+<article class="project-card-tabs">
+  <aside class="project-side">
+    <h2>
+      <span class="project-dot"></span>
+      Kanap
+    </h2>
+
+    <p data-key="kanapDescription">Site e-commerce permettant de consulter des produits, personnaliser ses achats et gérer un panier avant validation de commande.</p>
+
+    <div class="project-tags">
+      <span>JavaScript</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>API REST</span>
+      <span>Node.js</span>
+    </div>
+  </aside>
+
+  <div class="project-main">
+    <div class="project-tabs">
+      <button class="tab-btn active" data-project="kanap" data-tab="preview" data-key="previewTab">Aperçu</button>
+      <button class="tab-btn" data-project="kanap" data-tab="tech" data-key="technicalTab">Technique</button>
+      <button class="tab-btn" data-project="kanap" data-tab="github" data-key="githubTab">GitHub</button>
+    </div>
+
+    <div class="project-tab-content active" id="kanap-preview">
+      <img src="images/projects/kanapimg.PNG" alt="Aperçu Kanap">
+
+      <div class="project-text">
+        <p data-key="kanapPreviewDescription">Boutique en ligne permettant de parcourir un catalogue de canapés, consulter les détails d’un produit et finaliser une commande via un formulaire dynamique.</p>
+
+        <a href="https://luigi-kanap.netlify.app/" class="btn" target="_blank" data-key="viewProject">Voir le projet ↗</a>
+      </div>
+    </div>
+
+    <div class="project-tab-content tech-content" id="kanap-tech">
+  <div class="tech-grid">
+    <div class="tech-card">
+      <h4 data-key="frontendTitle">Frontend</h4>
+      <p>HTML5, CSS3, JavaScript ES6</p>
+    </div>
+
+    <div class="tech-card">
+      <h4 data-key="backendTitle">Backend</h4>
+      <p>Node.js, Express.js, API REST</p>
+    </div>
+
+    <div class="tech-card">
+      <h4 data-key="featuresTitle">Fonctionnalités</h4>
+      <ul>
+        <li data-key="dynamicProducts">Chargement dynamique des produits</li>
+        <li data-key="fetchApiCommunication">Communication via Fetch API</li>
+        <li data-key="cartLocalStorage">Gestion du panier avec localStorage</li>
+        <li data-key="formValidation">Validation des formulaires</li>
+      </ul>
+    </div>
+
+    <div class="tech-card">
+      <h4 data-key="projectSkillsTitle">Compétences</h4>
+      <ul>
+        <li data-key="domManipulation">Manipulation du DOM</li>
+        <li data-key="asyncAwait">Async / Await</li>
+        <li data-key="frontBackArchitecture">Architecture Front / Back</li>
+        <li data-key="jsEvents">Gestion des événements JavaScript</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="project-tab-content tech-content" id="kanap-github">
+  <div class="github-card">
+
+    <h3 data-key="githubRepository">GitHub Repository</h3>
+
+    <p data-key="githubDescription">Retrouvez le code source complet du projet ainsi que sa structure et sa documentation.</p>
+
+    <div class="github-features">
+      <span>📁 Frontend</span>
+      <span>📁 Backend</span>
+      <span>⚡ API REST</span>
+      <span>📖 README</span>
+      <span>🧩 JavaScript ES6</span>
+      <span>🔧 Node.js / Express</span>
+    </div>
+
+    <a href="https://github.com/Aelid/Kanap" class="btn" target="_blank" data-key="viewGithub">Voir GitHub ↗</a>
+
+  </div>
+</div>
+</div>
+</article>
+
+
+<article class="project-card-tabs">
+  <aside class="project-side">
+    <h2>
+      <span class="project-dot"></span>
+      Groupomania
+    </h2>
+
+    <p data-key="groupomaniaDescription">Réseau social interne d’entreprise permettant aux utilisateurs de publier, consulter et interagir avec des articles au sein d’une plateforme privée.</p>
+
+    <div class="project-tags">
+      <span>Vue.js</span>
+      <span>Node.js</span>
+      <span>MongoDB</span>
+      <span>JWT</span>
+      <span>Express</span>
+    </div>
+  </aside>
+
+  <div class="project-main">
+    <div class="project-tabs">
+      <button class="tab-btn active" data-project="groupomania" data-tab="preview" data-key="previewTab">Aperçu</button>
+      <button class="tab-btn" data-project="groupomania" data-tab="tech" data-key="technicalTab">Technique</button>
+      <button class="tab-btn" data-project="groupomania" data-tab="github" data-key="githubTab">GitHub</button>
+    </div>
+
+    <div class="project-tab-content active" id="groupomania-preview">
+      <img src="images/projects/Groupo.PNG" alt="Aperçu Groupomania">
+
+      <div class="project-text">
+        <p data-key="groupomaniaPreviewDescription">Application full-stack inspirée d’un réseau social interne, avec inscription, connexion, publication d’articles et affichage des contenus partagés par les utilisateurs.</p>
+
+        <a href="https://groupoluigi.netlify.app/" class="btn" target="_blank" data-key="viewProject">Voir le projet ↗</a>
+      </div>
+    </div>
+
+    <div class="project-tab-content tech-content" id="groupomania-tech">
+  <div class="tech-grid">
+    <div class="tech-card">
+      <h4 data-key="frontendTitle">Frontend</h4>
+      <p>Vue.js 3, HTML5, SCSS, JavaScript ES6</p>
+    </div>
+
+    <div class="tech-card">
+      <h4 data-key="backendTitle">Backend</h4>
+      <p>Node.js, Express.js, API REST, Mongoose, MongoDB Atlas</p>
+    </div>
+
+    <div class="tech-card">
+      <h4 data-key="featuresTitle">Fonctionnalités</h4>
+      <ul>
+        <li data-key="secureAuthJwt">Authentification sécurisée (JWT)</li>
+        <li data-key="userAccounts">Création et gestion des comptes utilisateurs</li>
+        <li data-key="createDeletePosts">Publication et suppression de posts</li>
+        <li data-key="editPosts">Modification des publications</li>
+        <li data-key="imageUpload">Upload et gestion d'images</li>
+        <li data-key="dynamicFeed">Fil d'actualité dynamique</li>
+        <li data-key="routeProtection">Protection des routes via middleware</li>
+      </ul>
+    </div>
+
+    <div class="tech-card">
+      <h4 data-key="projectSkillsTitle">Compétences</h4>
+      <ul>
+        <li data-key="jwtAuthSkill">Authentification par token (JWT)</li>
+        <li data-key="bcryptSkill">Gestion sécurisée des mots de passe (bcrypt)</li>
+        <li data-key="frontBackArchitecture">Architecture Front / Back</li>
+        <li data-key="apiRestDesign">Conception d'une API REST</li>
+        <li data-key="expressMiddlewares">Middlewares Express personnalisés</li>
+        <li data-key="mongodbMongooseIntegration">Intégration MongoDB / Mongoose</li>
+        <li data-key="multerFiles">Gestion des fichiers avec Multer</li>
+        <li data-key="sharpImages">Traitement d'images avec Sharp</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="project-tab-content tech-content" id="groupomania-github">
+  <div class="github-card">
+
+    <h3 data-key="githubRepository">GitHub Repository</h3>
+
+    <p>
+      <span data-key="githubGroupomaniaDescription">Retrouvez le code source complet de Groupomania, incluant le frontend Vue.js, l'API REST Node.js/Express et l'ensemble de la documentation du projet.</span>
+    </p>
+
+    <div class="github-features">
+      <span>🔐 JWT Auth</span>
+      <span>⚡ API REST</span>
+      <span>📤 Multer Upload</span>
+      <span>🗄️ MongoDB Atlas</span>
+      <span>⚡ Node.js / Express</span>
+      <span>💚 Vue.js</span>
+    </div>
+
+    <a href="https://github.com/Aelid/Groupomania" class="btn" target="_blank" data-key="viewGithub">Voir GitHub ↗</a>
+
+      </div>
+    </div>
+  </div>
+</article>
+
+  </section>
+</main>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+  <div class="footer-inner">
+    <p>© 2026 Luigi Behal</p>
+
+    <div class="footer-links">
+      <a href="index.html" data-key="footerHome">Accueil</a>
+      <a href="projects.html" data-key="footerProjects">Projets</a>
+      <a href="about.html" data-key="footerAbout">À propos</a>
+      <a href="https://github.com/Aelid" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/luigi-behal/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+<script src="translations.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
