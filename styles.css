@@ -820,6 +820,10 @@ footer {
   .cv-grid {
     grid-template-columns: 1fr;
   }
+  .project-text {
+  text-align: center;
+  max-width: none;
+}
 }
 
 /* ========================================
@@ -1570,19 +1574,22 @@ footer {
 
 
 
-@media (max-width: 1500px) {
+@media (min-width: 1101px) and (max-width: 1500px) {
   .project-tab-content.active {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 480px) minmax(260px, 340px);
+    justify-content: center;
+    gap: 28px;
   }
 
   .project-tab-content img {
     width: 100%;
-    max-width: 520px;
-    margin: 0 auto;
+    max-width: 480px;
+    margin: 0;
   }
 
   .project-text {
-    text-align: center;
+    max-width: 340px;
+    text-align: left;
   }
 }
 /* ========================================
