@@ -1649,3 +1649,24 @@ footer {
     padding-top: 2rem;
   }
 }
+
+@media (max-width: 1200px) {
+  .project-slide {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .project-image img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    max-height: 280px;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .project-info {
+    max-width: 520px;
+    margin: 0 auto;
+  }}
